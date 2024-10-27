@@ -1,0 +1,58 @@
+body{
+  padding: 100px auto;
+  margin: 100px auto;
+  border:border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(211, 203, 203);
+    text-rendering: auto;
+    height: 200px;
+    width:800px;
+    border: 5px solid;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.timer
+{
+    text-align: center;
+    margin: 10% auto;
+    padding: 10% auto;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+
+}
+.col div{
+    width: 250px;
+    text-align: center;
+}
+ input{
+    display: block;
+    height: 50px;
+    width: 60%;
+    border: 5px;
+    text-align: center;
+    font-size: 22px;
+
+ }
+ #start{
+    text-align: center;
+    padding: 10px auto;
+    background-color: rgb(88, 88, 174);
+    display: flex;
+    justify-content: center;
+
+ }
