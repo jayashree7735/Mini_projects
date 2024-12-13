@@ -1,38 +1,35 @@
 var emoji = document.getElementById('emoji');
 var mood = document.getElementById('mood');
-var slidervalue = document.getAnimations('range');
+var slider = document.getElementById('range');
 
-slidervalue.oninput = function()
-{
-    var value = this.value;
+        slider.oninput = function () {
+            var value = parseInt(this.value);
 
-    if(value <= 20)
-    {
-        emoji.innerHTML = '&#128525;';
-        mood.innerHTML = 'Love';
-    }
+            if (value <= 20)
+             {
+                emoji.innerHTML = '&#128525;'; 
+                mood.innerHTML = 'Love';
+             } 
 
-    if(value <= 40)
-    {
-        emoji.innerHTML = '&#128526;';
-        mood.innerHTML = 'Aggresive';
-    }
+            else if (value > 20 && value <= 40)
+             {
+                emoji.innerHTML = '&#128526;';
+                mood.innerHTML = 'Aggressive';
+             }
 
-    if(value <= 60)
-    {
-        emoji.innerHTML = '&#128520;';
-        mood.innerHTML = 'Attitude';
-    }
+              else if (value > 40 && value <= 60) {
+                emoji.innerHTML = '&#128520;';
+                mood.innerHTML = 'Attitude';
+             }
 
-    if(value <= 80)
-    {
-        emoji.innerHTML = '&#128564;';
-        mood.innerHTML = 'Sleepy';
-    }
+              else if (value > 60 && value <= 80) {
+                emoji.innerHTML = '&#128564;'; 
+                mood.innerHTML = 'Sleepy';
+             } 
 
-    if(value <= 100)
-    {
-        emoji.innerHTML = '&#128514;';
-        mood.innerHTML = 'Happy';
-    }
-}
+
+             else if (value > 80 && value <= 100) {
+                emoji.innerHTML = '&#128514;'; 
+                mood.innerHTML = 'Happy';
+             }
+        };
